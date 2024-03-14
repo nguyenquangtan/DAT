@@ -4,6 +4,9 @@ import torch
 from os import path as osp
 from torch.nn import functional as F
 
+import sys
+sys.path.append('../basicsr')
+
 from basicsr.utils import img2tensor, scandir
 
 

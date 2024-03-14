@@ -7,7 +7,11 @@ from copy import deepcopy
 from functools import partial
 from os import path as osp
 
-from basicsr.data.prefetch_dataloader import PrefetchDataLoader
+from prefetch_dataloader import PrefetchDataLoader
+
+import sys
+sys.path.append('../basicsr')
+
 from basicsr.utils import get_root_logger, scandir
 from basicsr.utils.dist_util import get_dist_info
 from basicsr.utils.registry import DATASET_REGISTRY
