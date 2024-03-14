@@ -2,6 +2,9 @@ import importlib
 from copy import deepcopy
 from os import path as osp
 
+import sys
+sys.path.append('../basicsr')
+
 from basicsr.utils import get_root_logger, scandir
 from basicsr.utils.registry import ARCH_REGISTRY
 

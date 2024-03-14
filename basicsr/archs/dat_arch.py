@@ -11,6 +11,9 @@ from einops import rearrange
 import math
 import numpy as np
 
+import sys
+sys.path.append('../basicsr')
+
 from basicsr.utils.registry import ARCH_REGISTRY
 
 
